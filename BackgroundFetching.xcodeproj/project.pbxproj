@@ -16,39 +16,24 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C0D956D60BC1AACC005855A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C82804067257F0000B614F /* CoreData.framework */; };
+		C0D956D70BC1AAD2005855A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		C0D956D80BC1AAF2005855A1 /* BackgroundFetching_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* BackgroundFetching_DataModel.xcdatamodel */; };
+		C0D956D90BC1AAF9005855A1 /* SharedConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5819B18507CED7670031D011 /* SharedConstants.m */; };
+		C0D956DC0BC1AB1A005855A1 /* DataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D956DB0BC1AB1A005855A1 /* DataGenerator.m */; };
+		C0D956DF0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D956DD0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_main.m */; };
+		C0E7B9860BC1B7B5001E255E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97324FDCFA39411CA2CEA /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_FAST_OBJC_DISPATCH = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = s;
-				PREBINDING = NO;
-				ZERO_LINK = NO;
-			};
-			name = Development;
+/* Begin PBXContainerItemProxy section */
+		C0D956EB0BC1AC50005855A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0D956D00BC1AAA9005855A1;
+			remoteInfo = GenerateBackgroundFetchingData;
 		};
-		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				PREBINDING = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -62,13 +47,17 @@
 		5819B18507CED7670031D011 /* SharedConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedConstants.m; sourceTree = "<group>"; };
 		581BB10107DE67900065BBB5 /* BackgroundFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundFetcher.h; sourceTree = "<group>"; };
 		581BB10207DE67900065BBB5 /* BackgroundFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundFetcher.m; sourceTree = "<group>"; };
-		581F954A07CD83DE008B3D99 /* GenerateBackgroundFetchingData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GenerateBackgroundFetchingData.xcodeproj; path = GenerateBackgroundFetchingData/GenerateBackgroundFetchingData.xcodeproj; sourceTree = "<group>"; };
 		770B37EC0679A11B001EADE2 /* BackgroundFetching_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BackgroundFetching_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		77C8280B06725ACE000B614F /* BackgroundFetchingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundFetchingAppDelegate.h; sourceTree = "<group>"; };
 		77C8280C06725ACE000B614F /* BackgroundFetchingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundFetchingAppDelegate.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BackgroundFetching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundFetching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D956D10BC1AAA9005855A1 /* GenerateBackgroundFetchingData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateBackgroundFetchingData; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D956DA0BC1AB1A005855A1 /* DataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DataGenerator.h; sourceTree = "<group>"; };
+		C0D956DB0BC1AB1A005855A1 /* DataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DataGenerator.m; sourceTree = "<group>"; };
+		C0D956DD0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GenerateBackgroundFetchingData_main.m; sourceTree = "<group>"; };
+		C0D956DE0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GenerateBackgroundFetchingData_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +69,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0D956CF0BC1AAA9005855A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E7B9860BC1B7B5001E255E /* AppKit.framework in Frameworks */,
+				C0D956D60BC1AACC005855A1 /* CoreData.framework in Frameworks */,
+				C0D956D70BC1AAD2005855A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C0D956DA0BC1AB1A005855A1 /* DataGenerator.h */,
+				C0D956DB0BC1AB1A005855A1 /* DataGenerator.m */,
 				581BB10107DE67900065BBB5 /* BackgroundFetcher.h */,
 				581BB10207DE67900065BBB5 /* BackgroundFetcher.m */,
 				77C8280B06725ACE000B614F /* BackgroundFetchingAppDelegate.h */,
@@ -116,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* BackgroundFetching.app */,
+				C0D956D10BC1AAA9005855A1 /* GenerateBackgroundFetchingData */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +125,6 @@
 		29B97314FDCFA39411CA2CEA /* BackgroundFetching */ = {
 			isa = PBXGroup;
 			children = (
-				581F954A07CD83DE008B3D99 /* GenerateBackgroundFetchingData.xcodeproj */,
 				7756732906782D8800D1FEB8 /* Models */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -137,6 +138,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C0D956DD0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_main.m */,
+				C0D956DE0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_Prefix.pch */,
 				5819B18507CED7670031D011 /* SharedConstants.m */,
 				5819B17507CED4A90031D011 /* SharedConstants.h */,
 				32CA4F630368D1EE00C91783 /* BackgroundFetching_Prefix.pch */,
@@ -185,21 +188,8 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BackgroundFetching_Prefix.pch;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PREBINDING = NO;
-				PRODUCT_NAME = BackgroundFetching;
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
+				C0D956EC0BC1AC50005855A1 /* PBXTargetDependency */,
 			);
 			name = BackgroundFetching;
 			productInstallPath = "$(HOME)/Applications";
@@ -207,23 +197,37 @@
 			productReference = 8D1107320486CEB800E47090 /* BackgroundFetching.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0D956D00BC1AAA9005855A1 /* GenerateBackgroundFetchingData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0D956D30BC1AAC8005855A1 /* Build configuration list for PBXNativeTarget "GenerateBackgroundFetchingData" */;
+			buildPhases = (
+				C0D956CE0BC1AAA9005855A1 /* Sources */,
+				C0D956CF0BC1AAA9005855A1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenerateBackgroundFetchingData;
+			productName = GenerateBackgroundFetchingData;
+			productReference = C0D956D10BC1AAA9005855A1 /* GenerateBackgroundFetchingData */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 2644AC8408B68B930014924E /* Build configuration list for PBXProject "BackgroundFetching" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				4A9504CCFFE6A4B311CA0CBA /* Development */,
-				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* BackgroundFetching */;
 			projectDirPath = "";
+			projectRoot = "";
+			shouldCheckCompatibility = 1;
 			targets = (
 				8D1107260486CEB800E47090 /* BackgroundFetching */,
+				C0D956D00BC1AAA9005855A1 /* GenerateBackgroundFetchingData */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +258,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0D956CE0BC1AAA9005855A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D956D80BC1AAF2005855A1 /* BackgroundFetching_DataModel.xcdatamodel in Sources */,
+				C0D956DC0BC1AB1A005855A1 /* DataGenerator.m in Sources */,
+				C0D956DF0BC1AB3E005855A1 /* GenerateBackgroundFetchingData_main.m in Sources */,
+				C0D956D90BC1AAF9005855A1 /* SharedConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0D956EC0BC1AC50005855A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0D956D00BC1AAA9005855A1 /* GenerateBackgroundFetchingData */;
+			targetProxy = C0D956EB0BC1AC50005855A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -323,7 +346,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Debug;
 		};
@@ -333,7 +356,52 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+		C0D956D40BC1AAC8005855A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GenerateBackgroundFetchingData_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GenerateBackgroundFetchingData;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C0D956D50BC1AAC8005855A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GenerateBackgroundFetchingData_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = GenerateBackgroundFetchingData;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -354,6 +422,15 @@
 			buildConfigurations = (
 				2644AC8508B68B930014924E /* Debug */,
 				2644AC8608B68B930014924E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0D956D30BC1AAC8005855A1 /* Build configuration list for PBXNativeTarget "GenerateBackgroundFetchingData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D956D40BC1AAC8005855A1 /* Debug */,
+				C0D956D50BC1AAC8005855A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
