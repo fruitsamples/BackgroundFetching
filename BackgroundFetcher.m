@@ -55,7 +55,7 @@ Copyright � 2005 Apple Computer, Inc., All Rights Reserved
 {
     if (self = [super init]) {
         if (nil == coordinator) {
-            [NSException raise:@"InvalidArgumentException" format:@"-[BackgroundFetcher initWithCoordinator:] was passed a nil coordinator!"];
+            @throw( [NSException exceptionWithName:@"InvalidArgumentException" reason:@"-[BackgroundFetcher initWithCoordinator:] was passed a nil coordinator!" userInfo:nil] );
         }
         managedObjectContext = [[NSManagedObjectContext alloc] init];
         [managedObjectContext setPersistentStoreCoordinator:coordinator];
